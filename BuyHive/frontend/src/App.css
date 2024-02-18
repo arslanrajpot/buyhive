@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0px 35px;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+}
+
+#navbar li a:hover,
+#navbar li a.active::after{
+  color: cornflowerblue;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.card_container
+{
+   display:"flex";
+   border:"none";
+   align-items: center;
+   border: none;
+   width: 250px;
+}
+
+
+.card_container:hover
+{
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Apply a box shadow when hovered */
+
+}
+
+.dropdown
+{
+  border: none;
+  padding-right: 3rem;
+  width: 300px;
+  height: 50px;
+  background-color:white;
+  padding-left: 1.5rem;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+
+.searchField
+{
+  margin-left: 20px;
+  margin-right: -20px;
+  height: 50px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.searchDiv
+{
+
+  display: flex;
+  align-items: center;
+  height: 15vh;  
+  border-radius: 15px;
+  background-color: rgba(35,31,32,.15) 
+}
+.categories{
+  display: flex;
+  background-color:rgba(35,31,32,.15) ;
+}
+.category{
+  margin-left: 20px;
+}
+
+.subCategories{
+  list-style: none;
+  padding: 0px 35px;
+  position: relative;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
